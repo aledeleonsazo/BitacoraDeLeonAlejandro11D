@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora Alejandro de León Sazo</title>
+    <title>Bitácora Brianna De León</title>
     <link rel="icon" href="recursos/IMG/logocapou.png" type="image/png">
+
     <style>
         /* Estilos Generales */
         html, body {
@@ -20,23 +21,26 @@
             background-color: #eef8ff;
         }
 
+        /* Encabezado */
         header {
-            padding: 20px;
-            background-color: rgb(41, 128, 185);
-            color: aliceblue;
-        }
-
-        header h1 {
+            padding: 25px;
+            background: linear-gradient(90deg, #1565C0, #42A5F5);
             color: white;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 
-                0 0 5px white,
-                0 0 10px rgb(173, 216, 230),
-                0 0 20px rgb(135, 206, 250),
-                0 0 40px rgb(30, 144, 255);
         }
 
+        /* Título */
+        header h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+            margin: 0;
+        }
+
+        /* Contenido principal */
         main {
             flex: 1;
             padding: 40px 20px;
@@ -45,29 +49,29 @@
             background-color: rgb(230, 245, 255);
         }
 
-        /* Tarjetas de cada semana */
+        /* Tarjetas */
         .semana {
             background: white;
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-left: 8px solid rgb(52, 152, 219);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 8px solid #42A5F5;
             transition: transform 0.3s ease;
             text-align: left;
         }
 
         .semana:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
 
         .semana h2 {
-            color: rgb(25, 118, 210);
+            color: #1565C0;
             margin-top: 0;
         }
 
-        /* Efecto Zoom en Logo */
+        /* Logo */
         footer img {
             transition: transform 0.3s ease;
             cursor: pointer;
@@ -77,30 +81,38 @@
             transform: scale(1.15);
         }
 
+        /* Pie de página */
         footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 50px;
-            border-top: 1px solid rgb(18, 16, 16);
-            background-color: rgb(187, 222, 251);
+            border-top: 1px solid rgb(18,16,16);
+            background-color: rgb(187,222,251);
         }
 
-        @media(max-width:600px) {
-            footer {
+        @media(max-width:600px){
+            footer{
                 flex-direction: column;
-                gap: 15px;
-                padding: 20px;
+                gap:15px;
+                padding:20px;
+            }
+
+            header h1{
+                font-size:1.7rem;
             }
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Bitácora Segunda y Tercera Unidad - Alejandro de León Sazo</h1>
+        <h1>Bitácora Segunda y Tercera Unidad - Brianna De León</h1>
     </header>
 
     <main>
+
         <div class="semana">
             <h2>Semana 1</h2>
             <p>Aquí está el contenido de los primeros temas de programación.</p>
@@ -118,7 +130,7 @@
 
         <div class="semana">
             <h2>Semana 3</h2>
-            <p>Cómo encender LEDS y aprender sobre la RGB</p>
+            <p>Cómo encender LEDS y aprender sobre la RGB.</p>
             <video controls width="100%">
                 <source src="recursos/briannadeleon.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de este video.
@@ -127,7 +139,7 @@
 
         <div class="semana">
             <h2>Semana 4</h2>
-            <p>Circuito de LEDS encendidos</p>
+            <p>Circuito de LEDS encendidos.</p>
             <video controls width="100%">
                 <source src="recursos/WhatsApp Video 2026-07-21 at 17.58.29.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de este video.
@@ -136,7 +148,7 @@
 
         <div class="semana">
             <h2>Semana 5</h2>
-            <p>Circuito del semáforo</p>
+            <p>Circuito del semáforo.</p>
             <video controls width="100%">
                 <source src="recursos/8mb.video-jxe-O4bkzbRM.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de este video.
@@ -145,12 +157,13 @@
 
         <div class="semana">
             <h2>Semana 6</h2>
-            <p>Circuito del sensor de distancia ultrasónico</p>
+            <p>Circuito del sensor de distancia ultrasónico.</p>
             <video controls width="100%">
                 <source src="recursos/s6.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de este video.
             </video>
         </div>
+
     </main>
 
     <footer>
