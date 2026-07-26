@@ -71,8 +71,18 @@
             margin-top: 0;
         }
 
+        /* Videos e imágenes */
+        video,
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
         /* Logo */
         footer img {
+            width: 70px;
+            box-shadow: none;
             transition: transform 0.3s ease;
             cursor: pointer;
         }
@@ -116,7 +126,7 @@
         <div class="semana">
             <h2>Semana 1</h2>
             <p>Aquí está el contenido de los primeros temas de programación.</p>
-            <embed src="recursos/img/Introducción Arduino copia (1) (1).pdf" type="application/pdf">
+            <embed src="recursos/img/Introducción Arduino copia (1) (1).pdf" type="application/pdf" width="100%" height="600px">
         </div>
 
         <div class="semana">
@@ -137,13 +147,12 @@
             </video>
         </div>
 
+        <!-- SEMANA 4 CORREGIDA -->
         <div class="semana">
             <h2>Semana 4</h2>
             <p>Circuito de LEDS encendidos.</p>
-            <img controls width="100%">
-                <source src="recursos/img/Captura de pantalla 2026-07-25 a la(s) 19.43.25.png" type="video/mp4">
-                Tu navegador no soporta la reproducción de este video.
-            </img>
+
+            <img src="recursos/img/semana4.png" alt="Circuito de LEDS">
         </div>
 
         <div class="semana">
@@ -168,7 +177,7 @@
 
     <footer>
         <p>© 2026 Bitácora Alejandro de León</p>
-        <img src="recursos/img/LOGO_CAPOUILLIEZ - Isotipos (2)-08 (1).png" alt="Logo" width="70">
+        <img src="recursos/img/LOGO_CAPOUILLIEZ - Isotipos (2)-08 (1).png" alt="Logo">
     </footer>
 
 </body>
