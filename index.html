@@ -1,71 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora Alejandro de León</title>
-    <link rel="icon" href="recursos/img/LOGO_CAPOUILLIEZ - Isotipos (2)-08 (1).png" style="image/png">
+    <title>Bitácora Alejandro de León Sazo</title>
+    <link rel="icon" href="recursos/IMG/logocapou.png" type="image/png">
     <style>
-        /*CSS-lenguaje de programacion(Diseñar en cascada)*/
-        html, body{
+        /* Estilos Generales */
+        html, body {
             height: 100%;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-    body{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    header{
-        padding: 20px;
-        background-color: rgb(1, 145, 255);
-        color: azure;
-    }
-    main{
-        flex: 1;
-        padding: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: rgb(0, 0, 0);
-    }
-    footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 50px;
-        border-top: 1px solid rgb(0, 0, 0);
-        background-color: rgb(255, 188, 31);
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #fdf2f8;
         }
-        @media(max-widht:600px){
-            footer{
+
+        header {
+            padding: 20px;
+            background-color: rgb(245, 92, 194);
+            color: aliceblue;
+        }
+
+        header h1 {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 
+                0 0 5px white,
+                0 0 10px rgb(238, 194, 239),
+                0 0 20px rgb(244, 130, 227),
+                0 0 40px #eb2fcf;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(255, 230, 245);
+        }
+
+        /* --- EL RETO: Clase .semana para tarjetas elegantes --- */
+        .semana {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 8px solid rgb(245, 92, 194);
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .semana h2 {
+            color: rgb(180, 50, 130);
+            margin-top: 0;
+        }
+
+        /* --- INSTRUCCIÓN 2: Efecto Zoom en Logo --- */
+        footer img {
+            transition: transform 0.3s ease; /* Corregido de 0.3x a 0.3s */
+            cursor: pointer;
+        }
+
+        footer img:hover {
+            transform: scale(1.15); /* Efecto zoom */
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(18, 16, 16);
+            background-color: rgb(244, 193, 230);
+        }
+
+        @media(max-width:600px) {
+            footer {
                 flex-direction: column;
                 gap: 15px;
                 padding: 20px;
             }
         }
-        main h1{
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow:
-                0 0 5px white
-                0 0 10px white
-                0 0 20px white
-                0 0 40px red
-        }
     </style>
 </head>
 <body>
     <header>
-<h1>Bitacora Segunda y tercera Unidad</h1>
+        <h1>Bitácora Segunda y Tercera Unidad - Alejandro de leon sazo</h1>
     </header>
+
     <main>
-<h4>Contenido de a pagina Web</h4>
+        <!-- Ejemplo de cómo usar la clase .semana -->
+        <div class="semana">
+            <h2>Semana 1</h2>
+            <p>Aquí está el contenido de los primeros temas de programación.</p>
+            <embed src="recursos/Introducción Arduino TICS.pdf" type="application/pdf">                                   
+        </div>
+
+        <div class="semana">
+            <h2>Semana 2</h2>
+            <p>Cómo hacer el zoom y creación de tarjetas.</p>
+            <!-- Video local o desde un enlace directo -->
+                <video controls width="100%">
+                    <source src="recursos/briannasemana2.mov" type="video/mp4">
+                    Tu navegador no soporta la reproducción de este video.
+                </video>
+        </div>
+        
+        <div class="semana">
+            <h2>Semana 3</h2>
+            <p>Cómo encender LEDS y aprender sobre la RGB</p>
+            <!-- Video local o desde un enlace directo -->
+            <video controls width="100%">
+                <source src="recursos/briannadeleon.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+
+         <div class="semana">
+            <h2>Semana 4</h2>
+            <p>Circuito de LEDS encendidos </p>
+            <!-- Video local o desde un enlace directo -->
+            <video controls width="100%">
+                <source src="recursos/WhatsApp Video 2026-07-21 at 17.58.29.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+        
+        <div class="semana">
+            <h2>Semana 5</h2>
+            <p>Circuito del semáforo</p>
+            <!-- Video local o desde un enlace directo -->
+            <video controls width="100%">
+                <source src="recursos/8mb.video-jxe-O4bkzbRM.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de este video.
+            </video>
+        </div>
+      
+        <div class="semana">
+            <h2>Semana 6</h2>
+            <p>Circuito del sensor de distancia ultrasónico</p>
+            <!-- Video local o desde un enlace directo -->
+            <video controls width="100%">
+                <source src="recursos/s6.mp4" type="video/mp4">
+            </video>
+        </div>
     </main>
-    <footer>
-<span>@slmcoco_</span>
-<img src="https://www.capouilliez.edu.gt/assets/img/logo.png"height="50" width="200">
-    </footer>
+    <body>
+
 </body>
 </html>
